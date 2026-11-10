@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hasu: Lotus Meditation</title>
+<meta name="description" content="A lotus that grows with your meditation practice. A few quiet minutes a day, no account, no ads, fully offline.">
+<meta property="og:title" content="Hasu: Lotus Meditation">
+<meta property="og:description" content="A lotus that grows with your meditation practice.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#f4e7cf">
+<link rel="icon" href="img/icon-180.png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="mark" href="./">Hasu</a>
+  <nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
+
+<!-- Scroll-driven bloom: the canvas stays pinned while the page scrolls through this section. -->
+<section class="bloom" id="bloom" aria-label="A lotus opening as you scroll">
+  <div class="pin">
+    <canvas id="stage" aria-hidden="true"></canvas>
+    <div class="lines">
+      <p class="line" data-from="0" data-to="0.2"><span>A few quiet minutes a day.</span></p>
+      <p class="line" data-from="0.28" data-to="0.5"><span>Each one helps your lotus grow.</span></p>
+      <p class="line" data-from="0.58" data-to="0.8"><span>What has grown is never lost.</span></p>
+      <div class="line final" data-from="0.88" data-to="2">
+        <h1>Hasu</h1>
+        <p>Grow a calm daily practice.</p>
+        <span class="soon">Coming soon to the App Store</span>
+      </div>
+    </div>
+    <div class="hint" id="hint">Scroll</div>
+  </div>
+</section>
+
+<main class="below">
+  <section class="intro">
+    <h2>Meditation you can watch grow</h2>
+    <p>Hasu is a small, quiet meditation app. Every day you practice, your plant grows a little: from a seed in the mud to a flower in full bloom. After thirty days it settles into your pond for good, and a new seed appears with a new practice to learn.</p>
+  </section>
+
+  <section class="cols">
+    <article>
+      <h3>Growth you never lose</h3>
+      <p>Your plant grows once for every day you practice, and it never shrinks. Miss a day and it simply rests under the evening sky. One short session wakes it again.</p>
+    </article>
+    <article>
+      <h3>Four plants, four practices</h3>
+      <p>Lotus for breath focus. Bamboo for the body scan. Bonsai for open awareness. A bodhi tree for loving-kindness. Each teaches one skill over thirty days.</p>
+    </article>
+    <article>
+      <h3>Private by design</h3>
+      <p>No account, no ads, no tracking. Hasu never connects to the internet, and your progress stays on your phone.</p>
+    </article>
+  </section>
+
+  <section class="shots" aria-label="Screens from the app">
+    <img src="img/01-lotus-bloom.webp" width="660" height="1434" loading="lazy" alt="The Today screen showing a lotus in bloom on day 27 of 30">
+    <img src="img/03-bamboo.webp" width="660" height="1434" loading="lazy" alt="A bamboo grove grown through body scan practice">
+    <img src="img/04-pond.webp" width="660" height="1434" loading="lazy" alt="The pond, holding plants that have reached full bloom">
+  </section>
+
+  <section class="close">
+    <h2>Sit. Breathe. Bloom.</h2>
+    <p>Three, five, ten or fifteen minutes. A breathing circle, a line of guidance, a soft bell.</p>
+    <span class="soon">Coming soon to the App Store</span>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© 2026 Guy Dahan</span>
+  <nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+</footer>
+
+<script src="scroll.js"></script>
+</body>
+</html>
