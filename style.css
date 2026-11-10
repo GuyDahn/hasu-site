@@ -60,6 +60,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; letter-spac
 .shots img { width: 100%; height: auto; display: block; border-radius: clamp(14px, 2.4vw, 30px); box-shadow: 0 30px 60px -30px rgba(10, 25, 35, .7); }
 .shots img:nth-child(2) { transform: translateY(6vh); }
 .close { text-align: center; padding-bottom: 18vh !important; }
+.close .price { font-size: 15px; opacity: .7; margin-top: 14px; }
 .close .soon { color: var(--on-water); margin-top: 34px; }
 
 .foot {
