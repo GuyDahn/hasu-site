@@ -66,10 +66,13 @@ body.home .bar.solid {
 /* The call to action sits on the water so nothing covers the open flower. */
 .line.cta { top: auto; bottom: 0; padding: 14vh 24px max(30px, env(safe-area-inset-bottom)); color: var(--on-water); background: linear-gradient(transparent, color-mix(in srgb, var(--water) 88%, transparent) 62%); }
 .line.cta .tag { margin-bottom: 18px; font-size: clamp(21px, 2.4vw, 30px); font-style: italic; }
-.line.cta .pill { font-family: var(--sans); background: var(--on-water); color: #14242c; }
+.line.cta .pill { font-family: var(--sans); background: var(--on-water); color: #14242c; pointer-events: auto; }
+a.pill { transition: transform .4s var(--ease), box-shadow .4s var(--ease); }
+a.pill:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -14px rgba(4, 14, 20, .7); }
 .hint {
   position: absolute; left: 50%; bottom: max(28px, env(safe-area-inset-bottom)); transform: translateX(-50%);
   font-size: 11px; letter-spacing: .34em; text-transform: uppercase; color: var(--on-water); opacity: .85; transition: opacity .6s;
+  pointer-events: none;
 }
 .hint::after { content: ""; display: block; width: 1px; height: 30px; margin: 10px auto 0; background: currentColor; animation: drop 2.4s ease-in-out infinite; transform-origin: top; }
 @keyframes drop { 0%, 100% { transform: scaleY(.2); opacity: .3; } 50% { transform: scaleY(1); opacity: 1; } }
